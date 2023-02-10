@@ -1,5 +1,6 @@
 import { ChatHeader } from "../Main/ChatHeader";
 import { ChatMessage } from "../Main/ChatMessage";
+import { ChatPreview } from "../Main/ChatPreview";
 import { ChatSender } from "../Main/ChatSender";
 import { ChatList } from "../Sidebar/ChatList";
 import { SearchBar } from "../Sidebar/SearchBar";
@@ -14,9 +15,10 @@ export const MessangerLayout: React.FunctionComponent<MessangerLayoutProps> = ({
       {/* main bar */}
       <div className="flex-1">
         <div className="flex flex-col h-full">
-          <ChatHeader />
-          <ChatMessage />
-          <ChatSender />
+          {/* <ChatHeader /> */}
+          <ChatPreview />
+          {/* <ChatMessage /> */}
+          {/* <ChatSender /> */}
         </div>
       </div>
       {/* side bar */}
